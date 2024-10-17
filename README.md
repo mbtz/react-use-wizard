@@ -1,14 +1,18 @@
-<p align="center"><img src="https://raw.githubusercontent.com/devrnt/react-use-wizard/master/assets/logo.svg" alt="react-use-wizard logo" height="120px" style="margin-top: 20px;"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/mbtz/react-use-wizard/main/assets/logo.svg" alt="react-use-wizard logo" height="120px" style="margin-top: 20px;"/></p>
 <h1 align="center">react-use-wizard</h1>
 <p align="center">A React wizard (stepper) builder without the hassle, powered by hooks.</p>
 
 <p align="center">
-<img alt="ci" src="https://github.com/devrnt/react-use-wizard/workflows/CI/badge.svg?branch=main">
+<img alt="ci" src="https://github.com/mbtz/react-use-wizard/workflows/CI/badge.svg?branch=main">
 <img alt="version" src="https://img.shields.io/npm/v/react-use-wizard.svg" />
-<img alt="downloads" src="https://badgen.net/npm/dw/react-use-wizard" />
-<img alt="minzipped size" src="https://badgen.net/bundlephobia/minzip/react-use-wizard">
-<img alt="known vulnerabilities" src="https://snyk.io/test/github/devrnt/react-use-wizard/badge.svg">
+<img alt="downloads" src="https://badgen.net/npm/dw/@mbtz/react-use-wizard" />
+<img alt="minzipped size" src="https://badgen.net/bundlephobia/minzip/@mbtz/react-use-wizard">
+<img alt="known vulnerabilities" src="https://snyk.io/test/github/mbtz/react-use-wizard/badge.svg">
 </p>
+
+## Fork of [react-use-wizard](https://github.com/devrnt/react-use-wizard)
+
+:warning: This fork is only a stopgap until the original package implments the changes I need. For most usecases use the original package.
 
 ## Features
 
@@ -22,7 +26,7 @@
 ## Installation
 
 ```
-yarn add react-use-wizard
+yarn add @mbtz/react-use-wizard
 ```
 
 ## Quickstart
@@ -79,14 +83,14 @@ Example: pass a footer component that contains a "previous" and "next" button to
 
 #### Props
 
-| name       | type            | description                                                | required | default |
-| ---------- | --------------- | ---------------------------------------------------------- | -------- | ------- |
-| startIndex | number          | Indicate the wizard to start at the given step             | ❌       | 0       |
-| header     | React.ReactNode | Header that is shown above the active step                 | ❌       |         |
-| footer     | React.ReactNode | Footer that is shown below the active stepstep             | ❌       |         |
-| onStepChange     | (stepIndex) | Callback that will be invoked with the new step index when the wizard changes steps             | ❌       |         |
-  | wrapper  | React.React.ReactElement | Optional wrapper that is exclusively wrapped around the active step component. It is not wrapped around the `header` and `footer`             | ❌       |         |
-| children   | React.ReactNode | Each child component will be treated as an individual step | ✔️       |
+| name          | type                      | description                                                                                                                       | required | default |
+| ------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
+| startIndex    | number                    | Indicate the wizard to start at the given step                                                                                    | ❌       | 0       |
+| header        | React.ReactNode           | Header that is shown above the active step                                                                                        | ❌       |         |
+| footer        | React.ReactNode           | Footer that is shown below the active stepstep                                                                                    | ❌       |         |
+| onStepChange  | (stepIndex)               | Callback that will be invoked with the new step index when the wizard changes steps                                               | ❌       |         |
+| wrapper       | React.React.ReactElement  | Optional wrapper that is exclusively wrapped around the active step component. It is not wrapped around the `header` and `footer` | ❌       |         |
+| children      | React.ReactNode           | Each child component will be treated as an individual step                                                                        | ✔️        |         |
 
 #### Example
 
