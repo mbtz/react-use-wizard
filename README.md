@@ -4,7 +4,7 @@
 
 <p align="center">
 <img alt="ci" src="https://github.com/mbtz/react-use-wizard/workflows/CI/badge.svg?branch=main">
-<img alt="version" src="https://img.shields.io/npm/v/react-use-wizard.svg" />
+<img alt="version" src="https://img.shields.io/npm/v/@mbtz/react-use-wizard.svg" />
 <img alt="downloads" src="https://badgen.net/npm/dw/@mbtz/react-use-wizard" />
 <img alt="minzipped size" src="https://badgen.net/bundlephobia/minzip/@mbtz/react-use-wizard">
 <img alt="known vulnerabilities" src="https://snyk.io/test/github/mbtz/react-use-wizard/badge.svg">
@@ -20,7 +20,7 @@
 - Focused on logic
 - Zero dependencies
 - No UI restrictions
-- [Tiny size](https://bundlephobia.com/result?p=react-use-wizard@latest)
+- [Tiny size](https://bundlephobia.com/result?p=@mbtz/react-use-wizard@latest)
 - Written in TypeScript
 
 ## Installation
@@ -34,7 +34,7 @@ yarn add @mbtz/react-use-wizard
 ```js
 import * as React from 'react';
 
-import { Wizard, useWizard } from 'react-use-wizard';
+import { Wizard, useWizard } from '@mbtz/react-use-wizard';
 
 const App = () => (
   <Wizard>
@@ -149,7 +149,7 @@ Used to retrieve all methods and properties related to your wizard. Make sure `W
 ```javascript
 import * as React from 'react';
 
-import { Wizard, useWizard } from 'react-use-wizard';
+import { Wizard, useWizard } from '@mbtz/react-use-wizard';
 
 const App = () => (
   <Wizard>
@@ -200,7 +200,7 @@ It's recommended to pass the shared components to the `header` or `footer` in th
 ## Playground
 
 Small playground to showcase the functionalities of `react-use-wizard`:
-[https://devrnt.github.io/react-use-wizard/](https://devrnt.github.io/react-use-wizard/)
+[https://mbtz.github.io/react-use-wizard/](https://mbtz.github.io/react-use-wizard/)
 
 Following use cases are available in the playground
 
@@ -208,11 +208,11 @@ Following use cases are available in the playground
 - Animated wizard with sync steps
 - Integration with [react-query](https://react-query.tanstack.com/) (mutation on next step)
 
-Source code can be found [here](https://github.com/devrnt/react-use-wizard/tree/main/playground).
+Source code can be found [here](https://github.com/mbtz/react-use-wizard/tree/main/playground).
 
 ## Examples
 
-Go to [examples](https://github.com/devrnt/react-use-wizard/tree/master/examples) to check out some integrations (Gatsby, NextJS...).
+Go to [examples](https://github.com/mbtz/react-use-wizard/tree/master/examples) to check out some integrations (Gatsby, NextJS...).
 
 ## Async
 
@@ -252,7 +252,7 @@ If an async function is attached to `handleStep` the `isLoading` property will i
 
 Since `react-use-wizard` is focused to manage the logic of a wizard it doesn't mean you can't add some animation by your own. Add any animation library that you like. I highly suggest [framer-motion](https://www.framer.com/motion/) to add your animations.
 
-Checkout this [example](https://github.com/devrnt/react-use-wizard/blob/main/playground/modules/wizard/animated/index.tsx) to see how a step can be animated with framer motion.
+Checkout this [example](https://github.com/mbtz/react-use-wizard/blob/main/playground/modules/wizard/animated/index.tsx) to see how a step can be animated with framer motion.
 
 ## IE11
 
