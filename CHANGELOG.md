@@ -1,3 +1,3 @@
 # Changelog
 
-See [releases](https://github.com/devrnt/react-use-wizard/releases)
+See [releases](https://github.com/mbtz/react-use-wizard/releases)

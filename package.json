@@ -26,8 +26,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "browser": "./dist/react-use-wizard.mjs",
-      "import": "./dist/react-use-wizard.mjs",
+      "browser": "./dist/@mbtz/react-use-wizard.mjs",
+      "import": "./dist/@mbtz/react-use-wizard.mjs",
       "require": "./dist/index.js"
     }
   },
